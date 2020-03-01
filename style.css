@@ -1,0 +1,193 @@
+/**
+ * STYLE
+ */
+*, html, body, p, div, span, a, form, input, ul, li {
+	font-size: 18px;
+	line-height: 1em;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: none;
+	list-style: none;
+	font-family: "Roboto";
+}
+
+/**
+ * Sezione HEADER
+ */ 
+#header {
+	display: block; 
+	background-image: url('https://www.wallpaperflare.com/static/1016/516/18/long-exposure-landscape-dark-nature-wallpaper.jpg');
+	background-color: #222222; /* il colore è esa decimale. trovi un link utile qua: https://en.wikipedia.org/wiki/Web_colors; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#header h1 {
+	padding: 100px 40px; 
+	font-family: 'Montserrat';
+	font-size: 35px;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 10px #000000;
+}
+
+/**
+ * Menu centrato
+ */
+#header ul {
+	display: flex; 
+	justify-content: center; 
+	width: 100%;
+	background: #ffffff;
+	box-shadow: 0 2px 18px rgba(0,0,0,.2);
+}
+
+#header ul li a,
+#header ul li a:link,
+#header ul li a:visited {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	display: block;
+	padding: 20px;
+	margin: 0 5px;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #555555;
+}
+
+/**
+ * Queste sono le proprietà che definiscono cosa accade 
+ * quando passo il mouse sopra
+ */
+#header ul li a:hover {
+	background: #dddddd;
+	color: #000000;
+}
+
+/**
+ * Definiamo le proprietà per il CONTENT
+ */
+
+#content {
+	padding: 40px;
+	width: 60%;
+	margin: 0 auto;
+}
+
+/**
+ * Classe per Paragrafi
+ */
+
+.paragrafo {
+	line-height: 1.5em;
+	margin-bottom: 20px;
+}
+
+/**
+ * Qui definiamo la maniera di affiancare un immagine al testo
+ */
+
+.testo-con-img img {
+	float: left; 
+	max-width: 350px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+/**
+ * Queste sono proprioetà per i link A che hanno classe LINK
+ */
+.link,
+.link:link
+.link:visited {
+	color: #ff5733;
+	font-weight: bold;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+/**
+ * Call to Action
+ */
+
+.cta {
+	background: #cccccc;
+	padding: 60px;
+	border-radius: 6px;
+}
+
+.cta p {
+	font-size: 50px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.cta a,
+.cta a:link,
+.cta a:visited {
+	background: #ff5733;
+	color: #ffffff;
+	padding: 20px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 6px;
+}
+
+.cta a:hover {
+	background: #ff7051;
+}
+
+
+/**
+ * Sezione INPUT
+ */ 
+
+form {
+	margin: 10px auto;
+	background: #eeeeee;
+	padding: 20px;
+	border-radius: 6px;
+}
+
+.input-testo {
+	padding: 10px;
+	border-radius: 6px;
+	border: 1px solid #888;
+}
+
+.invia-form,
+.invia-form:link, 
+.invia-form:visited {
+	display: inline;
+	background: #ff5733;
+	color: #ffffff;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.invia-form:hover {
+	background: #ff7051;
+}
+
+/**
+ * Sezione FOOTER
+ */ 
+#footer {
+	display: block; 
+	background: #222222; 
+	color: #ffffff;
+	padding: 40px;
+	text-align: center;
+}

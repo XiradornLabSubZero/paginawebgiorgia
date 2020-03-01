@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Intestazione dove vanno parametri tecnici e usati da browser, motori di ricerca e altro.
+	In questa sezione vanno cose come LINK (per includer stili), SCRIPT (pezzi di codice), TITLE (Titolo della pagina), META (parametri che definiscono alcune proprietà tecniche) -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		
+		<!-- titolo della pagina visualizzato nella scheda del browser -->
+		<title>Pagina di Tony per Giorgia</title>
+		
+		<!-- Link del font o dei font presi da google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet"> 
+		
+		<!-- link del foglio di style CSS -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<!-- Questa è la parte che invece riguarda proprio la parte mostrata a video ovvero il corpo della pagina web e che include i DIV (aree per inserimento di contenuti e tag vari. Può avere una dimensione definita o essere diciamo adimensionale), P (paragrafi), A (link), span (piccoli identificatori di porzioni di area o testo), ecc... -->
+	<body>
+		
+		<!-- Importante. Il codice va scritto in maniera pulita attraverso INDENTAZIONE. Ogni tag (a parte eccezioni), è formato da due parti ovvero tag di apertura e tag di chiusura. Ogni codice INTERNO a due tag va indentato ovvero gli va aggiunto un TAB o 2/4 spazi per fare si che il tutto sia ordinato e pulito e si capisca dove stai facendo le modifiche -->
+
+		<!-- troverai ID e CLASS. La differenza? semplice gli ID DEVO ESSERE SEMPRE UNIVOCI mentre le CLASSI possono essere usate più volte -->
+
+		<!-- div a contenimento generale. solitamente viene chiamato wrapper -->
+		<div id="all">
+			
+			<!-- area dove verrà definita l'intestazione -->
+			<div id="header">
+				
+				<!-- Titolo principale. I titoli vanno da h1 fino ad h6. Semanticamente h1 va usato solo una volta ed identifica il titolo primario e principale della pagina -->
+				<h1>Pagina di Tony per Giorgia</h1>
+
+				<!-- AREA per il MENU. Ci sono una marea di modi per costruire il menu. la più corretta restando in termini di semplicità si fa usando un elenco NON ordinato UL ed elementi di lista identificati da LI -->
+				<ul id="menu">
+					<li><a href="#">menu1</a></li>
+					<li><a href="#">menu2</a></li>
+					<li><a href="#">menu3</a></li>
+					<li><a href="#">menu4</a></li>
+					<li><a href="#">menu5</a></li>
+				</ul>
+				
+			</div>
+
+			<!-- area di contenuto generale -->
+			<div id="content">
+
+				<!-- Inserisco un paio di paragrafi generici in cui troverai un paio di link qua e la. Se voglio andare a capo in un paragrafo senza abbandonare il paragrafo stesso uso il tag BR. Questo tag NON ha tag di apertura ma si usa così <BR />. Puoi anche usarlo <BR> senza la chiusura ma la forma corretta è la prima -->
+				<p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quaerat possimus pariatur qui culpa <a href="#" class="link">Link di esempio</a> minus quam provident dolor. Magni impedit dignissimos beatae numquam repudiandae accusantium maiores eius suscipit, deserunt quas! <a href="#" class="link">Link di esempio</a></p>
+				
+				<p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quaerat possimus pariatur qui culpa minus quam provident dolor. Magni impedit dignissimos beatae numquam repudiandae accusantium maiores eius suscipit, deserunt quas! <a href="#" class="link">Link di esempio</a></p>
+
+				<!-- Qui mettiamo del testo con un immagine affiancata -->
+				<div class="testo-con-img">
+					
+					<!-- alt è il titolo dell'immagine. E' molto importante per la leggibilità della pagina per doverse ragioni -->
+					<img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg" alt="fiore">
+					
+					<p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores sunt possimus optio. Ad ab minima vitae excepturi nisi officia, nesciunt libero deserunt, temporibus nemo aperiam sequi amet in illo, qui itaque, ut. Esse libero, voluptatibus, <a href="#" class="link">Link di esempio</a> sint dolorum nostrum omnis sequi. Iste voluptate neque, error doloribus sit quidem, sunt et, sequi minima ipsa tempore placeat eveniet reiciendis maxime pariatur aliquid itaque maiores atque dicta praesentium tenetur. Quae inventore esse reiciendis odit quod laudantium recusandae animi id voluptates eaque, repellat dolorum quia aperiam molestias possimus nisi corrupti ducimus <a href="#" class="link">Link di esempio</a> quisquam eum reprehenderit dolores architecto suscipit rerum enim! Facere asperiores velit voluptates ex eveniet!</p>
+
+				</div>
+
+				<!-- QUi mettiamo invece la CALL TO ACTION -->
+				<div class="cta">
+					<p>Fai la tua azione proprio cliccando qui</p>
+					<a href="#link">Clicca qui</a>
+				</div>
+
+				<!-- Questa zona invece la dedichiamo a inserire del testo attraverso un imput. Teoricamente un imput fa parte di un modulo ( in gergo FORM ) che poi servirà per fare una certa AZIONE. Ad esempio scrivere un commento, ecc. Ovviamente le dinamiche sono un po complesse ma possiamo ridurre il tuttto in via semplice -->
+
+				<form action="">
+					
+					<!-- gli input possono essere di tipo differente ovvero testo (TEXT), caselline a scelta signola (RADIO), caselle a scelta multipla (CHECKBOX), o per identificare i tasti di invio della form come BUTTON o SUBMIT ( il primo identifica un pulsante che non fa nulla, il secondo è un pulsante che fa direttamente l'ACTION della form ) -->
+
+					<!-- placeholder è solo un testo indicativo di aiuto, value è proprio il contenuto che tu vai a inserire come testo e simili -->
+					<input class="input-testo" type="text" value="" placeholder="inserire testo">
+
+					<input class="invia-form" type="submit" value="Invia">
+
+				</form>
+			
+			</div>
+
+			<!-- area del piè di pagina -->
+			<div id="footer">
+			
+				<p>
+					NOME: nome<br />
+					COGNOME: cognome<br />
+					CORSO: corso <br />
+					SEMESTRE: semestre<br />
+					DATA: data
+				</p>
+			
+			</div>
+
+		</div>
+
+	</body>
+</html>
